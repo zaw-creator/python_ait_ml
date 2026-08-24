@@ -6,7 +6,7 @@ import typer
 from rich.console import Console
 from rich.pretty import pprint
 
-from project.processor_celery.works import addition_job, subtraction_job, multiplier_job
+from .works import addition_job, subtraction_job, multiplier_job
 
 console = Console(highlight=False)
 cli = Typer()

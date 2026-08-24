@@ -18,7 +18,7 @@
             "request": "launch",
             "module": "uvicorn",
             "args": [
-                "project.web:app",
+                "python_ait_ml.web:app",
                 "--host","0.0.0.0",
                 "--port","8000",
                 "--workers","1",

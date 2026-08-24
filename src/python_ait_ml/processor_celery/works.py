@@ -4,7 +4,7 @@ import logging
 import time
 
 import os
-from project.celery import queue
+from ..celery import queue
 
 @queue.task
 def addition_job(a:int, b:int) -> int:

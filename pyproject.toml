@@ -32,5 +32,4 @@ dev = [
 package = true
 
 [project.scripts]
-python-project-starter = "project:cli"
-
+python-ait-ml = "python_ait_ml:cli"

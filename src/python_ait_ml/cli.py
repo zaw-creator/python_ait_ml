@@ -13,9 +13,9 @@ import logging
 _PROJECT_NAME = os.environ["PROJECT_NAME"]
 
 # adding command
-from project.processor import cli as processor_cli
-from project.processor_celery import cli as processor_celery_cli
-from project.web import cli as web_cli
+from .processor import cli as processor_cli
+from .processor_celery import cli as processor_celery_cli
+from .web import cli as web_cli
 
 cli = typer.Typer()
 cli.add_typer(processor_cli, 

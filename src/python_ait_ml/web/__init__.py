@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from project.web.router import router as web_router
+from .router import router as web_router
 app = FastAPI()
 
 app.include_router(web_router)
@@ -17,4 +17,4 @@ def start():
     host = os.environ["FASTAPI_HOST"]
     port = int(os.environ["FASTAPI_PORT"])
     workers = int(os.environ["FASTAPI_WORKERS"])
-    uvicorn.run("project.web:app", host=host, port=port, log_level="info", workers=workers)
+    uvicorn.run("python_ait_ml.web:app", host=host, port=port, log_level="info", workers=workers)
